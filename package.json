@@ -18,7 +18,8 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.8.2",
-    "react-scripts": "^1.0.14"
+    "react-scripts": "^1.0.14",
+    "webpack": "^3.5.1"
   },
   "dependencies": {
     "js-xss": "0.0.2",
@@ -30,8 +31,7 @@
     "searchkit": "2.3.0",
     "searchkit-datefilter": "0.0.2",
     "showdown": "^1.8.6",
-    "showdown-xss-filter": "^0.2.0",
-    "webpack": "^3.5.1"
+    "showdown-xss-filter": "^0.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
