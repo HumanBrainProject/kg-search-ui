@@ -35,7 +35,7 @@ const config = {
     },
     maxNbOfTermsTrigger: 4, // maximum number of terms before tweaking is turned off
   },
-  searchThrottleTime: 500 // nb of ms after which a request to elasticsearch will only be invoked
+  searchThrottleTime: 750 // nb of ms after which a request to elasticsearch will only be invoked
 };
 
 it('renders without crashing', () => {

@@ -36,7 +36,7 @@ const queryTweaking = {
   },
   maxNbOfTermsTrigger: 4 // maximum number of terms before tweaking is turned off
 };
-const searchThrottleTime = 500 // nb of ms after which a request to elasticsearch will only be invoked
+const searchThrottleTime = 750 // nb of ms after which a request to elasticsearch will only be invoked
 const oidcUri = "https://services.humanbrainproject.eu/oidc/authorize";
 const oidcClientId = "nexus-kg-search";
 
