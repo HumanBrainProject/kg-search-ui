@@ -149,26 +149,6 @@
     position: relative;
 }
 
-.field-value .collapsible button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-color: white;
-    text-decoration: none;
-    font-size: 24px;
-    color: #08c;
-    box-shadow: none;
-    z-index: 100;
-}
-
-.field-value .collapsible button:hover,
-.field-value .collapsible button:active {
-    color: #08c;
-}
-
 .field-value .collapsible .collapse {
     display: inline-block;
     overflow: hidden;
@@ -178,6 +158,21 @@
 
 .field-value .collapsible .collapse.in {
     max-height: 10000px;
+}
+
+.field-value .collapsible button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    color: #08c;
+    box-shadow: none;    
+    transform: translateY(-5px);
+}
+
+.field-value .collapsible button:hover,
+.field-value .collapsible button:active {
+    color: #08c;
 }
 
 .details-markdown h1,

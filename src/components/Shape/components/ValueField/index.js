@@ -89,10 +89,10 @@ export class ValueField extends Component {
           }
           if (showSmartContent && mapping.collapsible && value.value.length >= 1600) {
             valueTag = <span className="collapsible">
-              {!this.state.showMore[mapping.value] && <button onClick={() => this.showMore(mapping.value)}>...</button>}
               <span className={"collapse" + (this.state.showMore[mapping.value]?" in":"")}>
                 {valueTag}
               </span>
+              {!this.state.showMore[mapping.value] && <button onClick={() => this.showMore(mapping.value)}>More...</button>}
             </span>;
           }
         }
