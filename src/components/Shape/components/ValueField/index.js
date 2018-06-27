@@ -92,7 +92,7 @@ export class ValueField extends Component {
               <span className={"collapse" + (this.state.showMore[mapping.value]?" in":"")}>
                 {valueTag}
               </span>
-              {!this.state.showMore[mapping.value] && <button onClick={() => this.showMore(mapping.value)}>More...</button>}
+              {!this.state.showMore[mapping.value] && <button onClick={() => this.showMore(mapping.value)}>more...</button>}
             </span>;
           }
         }
