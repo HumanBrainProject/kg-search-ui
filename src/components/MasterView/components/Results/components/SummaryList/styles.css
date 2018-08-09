@@ -20,14 +20,14 @@ ul.sk-hits-list {
     -ms-flex-flow: unset;
     flex-flow: unset;
     margin: 10px 10px 20px;
-    padding: 0;
+    padding:10px 0 0 0;
 }
 
 [data-layoutMode="list"] .sk-hits-list {
     display: block;
     -ms-flex-flow: unset;
     flex-flow: unset;
-    margin: 10px 15px 20px;
+    margin: 10px 20px 20px;
 }
 
 .kgs-other-result-title {
@@ -47,7 +47,7 @@ ul.sk-hits-list {
 .sk-hits-list-hit {
     position: relative;
     display: inline-block;
-    margin: 10px;
+    margin: 0px 20px 10px 0px;
     background-color: white;
     -webkit-box-shadow: 2px 2px 4px#cbc9c9;
     box-shadow: 2px 2px 4px#cbc9c9;
@@ -90,7 +90,6 @@ ul.sk-hits-list {
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
         align-items: flex-start;
-        justify-content: center;
     }
     .sk-hits-list-hit {
         width: 440px;
@@ -100,16 +99,8 @@ ul.sk-hits-list {
         width: 100%;
         height: auto;
         height: unset;
-        margin: 1px;
+        margin: 0px 0 20px 0;
         border: 1px solid transparent;
-        background-color: transparent;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    [data-layoutMode="list"] .sk-hits-list-hit:nth-child(odd) {
-        background-color: #f4f4f4;
-    }
-    [data-layoutMode="list"] .sk-hits-list-hit:hover {
-        border-color: rgb(108, 115, 121);
+        background-color: #fff;
     }
 }
