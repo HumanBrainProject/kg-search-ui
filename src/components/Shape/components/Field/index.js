@@ -33,9 +33,16 @@ export function Field({name, data, mapping, showSmartContent}) {
   let objectTag = null;
   let listTag = null;
   let hintTag = null;
+  let order = null;
+
+  if(mapping.order && !showSmartContent){
+    order = {
+      "order": mapping.order
+    };
+  }
 
   if (mapping.value){
-    if(mapping.label_hidden){
+    if(mapping.label_hidden && !showSmartContent){
       labelTag = null;
     } else {
       labelTag = <div className="field-label">{mapping.value}</div>;
@@ -59,7 +66,7 @@ export function Field({name, data, mapping, showSmartContent}) {
   };
 
   return (
-    <span className={"kgs-shape__field" + (name?" kgs-shape__" + name:"")}>
+    <span style={order} className={"kgs-shape__field" + (name?" kgs-shape__" + name:"")}>
       {labelTag}
       {hintTag}
       {valueTag}
