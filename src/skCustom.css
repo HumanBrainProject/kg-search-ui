@@ -86,7 +86,6 @@ header + header + nav + hr + .main-content .sk-layout__body {
 [data-layoutMode] .sk-results-list__action-bar {
     background-color: transparent;
     margin: 0 20px;
-    padding: 15px;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -144,16 +143,11 @@ header + header + nav + hr + .main-content .sk-layout__body {
 
 @media (min-width: 992px) {
     [data-layoutMode="list"] .sk-layout__results {
-        background: #fff;
-        margin: 15px;
-        -ms-flex: auto;
-        flex: auto;
-        -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .08);
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .08);
+        background:transparent;
+        margin: 0px;
     }
     [data-layoutMode="list"] .sk-results-list__action-bar {
         background-color: transparent;
-        margin: 0 15px;
         padding: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
