@@ -25,35 +25,32 @@ import { ResultsFooter } from "./components/ResultsFooter";
 import { TermsShortNotice } from "../TermsShortNotice";
 import "./styles.css";
 
-const MasterViewComponent = () => {
-  const searchPanelRelatedElements = [
-    {querySelector: "body>header"},
-    {querySelector: "body>header + nav.navbar"},
-    {querySelector: "#CookielawBanner", cookieKey: "cookielaw_accepted"}
-  ];
+const searchPanelRelatedElements = [
+  {querySelector: "body>header"},
+  {querySelector: "body>header + nav.navbar"},
+  {querySelector: "#CookielawBanner", cookieKey: "cookielaw_accepted"}
+];
 
-  const resultFooterRelatedElements = [
-    {querySelector: ".main-content + hr + .container"},
-    {querySelector: "footer.footer[role=\"contentinfo\"]"}
-  ];
+const resultFooterRelatedElements = [
+  {querySelector: ".main-content + hr + .container"},
+  {querySelector: "footer.footer[role=\"contentinfo\"]"}
+];
 
-  //window.console.debug("MasterView rendering...");
-  return (
-    <div className="kgs-masterView">
-      <SearchPanel floatingPosition="top" relatedElements={searchPanelRelatedElements} />
-      <TermsShortNotice/>
-      <ShapesFilterPanel/>
-      <div className="kgs-masterView__panel">
-        <FiltersPanel/>
-        <div className="kgs-masterView__main">
-          <ResultsHeader/>
-          <ResultsPanel/>
-        </div>
+const MasterViewComponent = () => (
+  <div className="kgs-masterView">
+    <SearchPanel floatingPosition="top" relatedElements={searchPanelRelatedElements} />
+    <TermsShortNotice/>
+    <ShapesFilterPanel/>
+    <div className="kgs-masterView__panel">
+      <FiltersPanel/>
+      <div className="kgs-masterView__main">
+        <ResultsHeader/>
+        <ResultsPanel/>
       </div>
-      <ResultsFooter floatingPosition="bottom" relatedElements={resultFooterRelatedElements} />
     </div>
-  );
-};
+    <ResultsFooter floatingPosition="bottom" relatedElements={resultFooterRelatedElements} />
+  </div>
+);
 
 export const MasterView = withTabKeyNavigation(
   MasterViewComponent,
